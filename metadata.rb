@@ -41,7 +41,7 @@ supports 'oracle', '>= 6.9'
 supports 'ubuntu', '>= 14.04'
 
 # TODO: remove this as it will be deprecated in Chef 15
-depends 'ohai'
+# depends 'ohai'
 
 recipe 'dovecot::default', 'Installs and configures Dovecot.'
 recipe 'dovecot::user', 'Creates the dovecot system user.'

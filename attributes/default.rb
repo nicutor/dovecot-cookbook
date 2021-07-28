@@ -20,7 +20,7 @@
 default['dovecot']['install_from'] = 'package'
 
 case node['platform_family']
-when 'rhel', 'fedora'
+when 'rhel', 'fedora', 'amazon'
   default['dovecot']['lib_path'] = '/usr/libexec/dovecot'
 when 'suse'
   default['dovecot']['lib_path'] = '/var/run/dovecot'

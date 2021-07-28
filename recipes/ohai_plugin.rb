@@ -24,8 +24,8 @@ ohai 'dovecot' do
   action :nothing
 end
 
-ohai_plugin 'dovecot' do
-  source_file 'ohai_plugins/dovecot.rb.erb'
-  resource :template
-  variables enable_build_options: build_options
-end
+# ohai_plugin 'dovecot' do
+#   source_file 'ohai_plugins/dovecot.rb.erb'
+#   resource :template
+#   variables enable_build_options: build_options
+# end

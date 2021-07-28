@@ -18,7 +18,7 @@
 #
 
 case node['platform_family']
-when 'rhel', 'fedora'
+when 'rhel', 'fedora', 'amazon'
   default['dovecot']['packages']['core'] = %w[dovecot]
   default['dovecot']['packages']['imap'] = [] # included inside core
   default['dovecot']['packages']['pop3'] = [] # included inside core

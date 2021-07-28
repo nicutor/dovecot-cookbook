@@ -20,7 +20,7 @@
 # conf.d/10-ssl.conf
 
 case node['platform_family']
-when 'rhel', 'fedora'
+when 'rhel', 'fedora', 'amazon'
   default['dovecot']['conf']['ssl_cert'] = '</etc/pki/dovecot/certs/dovecot.pem'
   default['dovecot']['conf']['ssl_key'] = '</etc/pki/dovecot/private/dovecot.pem'
 when 'debian'
